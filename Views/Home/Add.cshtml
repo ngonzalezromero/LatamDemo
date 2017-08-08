@@ -1,0 +1,35 @@
+﻿@{
+
+}
+<h2>Add Product</h2>
+ 
+<div class="row">
+   <div class="form-group">
+    <label for="selectSourceCategories"> Select Data Source</label>
+    <select class="form-control" id="selectSourceCategories">
+      <option value="0">select</option>
+      <option value="@((int)@ViewBag.DataBase)">@ViewBag.DataBase</option>
+      <option value="@((int)@ViewBag.Memory)">@ViewBag.Memory</option>
+    </select>
+  </div>
+      <form class="frmAdd">
+        <div class="form-group">
+          <label for="txtName">Product Name </label>
+          <input type="text" class="form-control" id="txtName" placeholder="Enter Name">
+        </div>
+
+        <div class="form-group" id=divCategory>
+          <label >Categories</label>
+          <div class="form-check">
+          <div id="cblist">    
+          </div>
+        </div>
+        </div>
+        <div class="form-group" id=divOrder>
+          <label for="selectSourceCategories"> Order</label>
+          <select class="form-control" id="selectOrder">
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="">Submit</button>
+      </form>
+</div>

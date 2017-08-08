@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+        <h2>List Products</h2>
+        <form>
+
+  <div class="form-group">
+    <label for="exampleSelect1"> Select Data Source</label>
+    <select class="form-control" id="selectDataSource">
+      <option value="0">select</option>
+      <option value="@((int)@ViewBag.DataBase)">@ViewBag.DataBase</option>
+      <option value="@((int)@ViewBag.Memory)">@ViewBag.Memory</option>
+    </select>
+  </div>
+ 
+</form>
+    <table id="tblList" class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        
+        </tbody>
+    </table>
+   
+</div>
